@@ -1,0 +1,33 @@
+- estimate_syns_con:
+    formula: 6 * ((n - 1) ** 0.5) - 1
+    formula_ee: 1.5 * n
+    max_value: 25.0
+    sample:
+        size: 1000
+        post: central_column
+        pre: central_column
+- experimental_syns_con:
+    bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+- estimate_bouton_reduction:
+    bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+    sample:
+        size: 10000
+        target: central_column
+        mask: central-columns/central_column
+        assume_syns_bouton: 1.0
+- estimate_individual_bouton_reduction:
+    bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+    sample:
+        size: 10000
+        target: central_column
+        mask: central-columns/central_column
+        assume_syns_bouton: 1.0
+
+- generalized_cv:
+    cv: 0.32
+- override_mtype:
+    mtype_pattern: CHC
+    p_A: 1.0
+    bouton_reduction_factor: 1.0
+    pMu_A: 0.0
+

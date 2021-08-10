@@ -1,0 +1,369 @@
+- - estimate_syns_con: &id001
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: MOs@right-central_column-300.0um
+        pre: MOs@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con: &id002
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction: &id003
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/MOs@right-central_column-300.0um
+        size: 10000
+        target: MOs@right-central_column-300.0um
+  - estimate_individual_bouton_reduction: &id004
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/MOs@right-central_column-300.0um
+        size: 10000
+        target: MOs@right-central_column-300.0um
+  - generalized_cv: &id005
+      cv: 0.32
+  - override_mtype: &id006
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - - add_constraints:
+        from_region: PL
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ORBvl
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-bfd
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-ll
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ECT
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AIp
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISC
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISpm
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ILA
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: MOp
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISa
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISpor
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: FRP
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AIv
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-tr
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ORBm
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-n
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISp
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AUDpo
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: PERI
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: GU
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-ul
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ACAd
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISli
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ORBl
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: RSPv
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-un
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISrl
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSs
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISpl
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AUDp
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: TEa
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISal
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: ACAv
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: RSPagl
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISl
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: VISam
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AUDd
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AId
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: AUDv
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: RSPd
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: SSp-m
+- - estimate_syns_con: *id001
+  - experimental_syns_con: *id002
+  - estimate_bouton_reduction: *id003
+  - estimate_individual_bouton_reduction: *id004
+  - generalized_cv: *id005
+  - override_mtype: *id006
+  - - add_constraints:
+        from_region: MOs
