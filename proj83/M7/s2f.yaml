@@ -1,4 +1,1434 @@
-- - estimate_syns_con: &id001
+regions:
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: PL@right-central_column-300.0um
+        pre: PL@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/PL@right-central_column-300.0um
+        size: 10000
+        target: PL@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/PL@right-central_column-300.0um
+        size: 10000
+        target: PL@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: PL
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ORBvl@right-central_column-300.0um
+        pre: ORBvl@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ORBvl@right-central_column-300.0um
+        size: 10000
+        target: ORBvl@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ORBvl@right-central_column-300.0um
+        size: 10000
+        target: ORBvl@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ORBvl
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-bfd@right-central_column-300.0um
+        pre: SSp-bfd@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-bfd@right-central_column-300.0um
+        size: 10000
+        target: SSp-bfd@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-bfd@right-central_column-300.0um
+        size: 10000
+        target: SSp-bfd@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-bfd
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-ll@right-central_column-300.0um
+        pre: SSp-ll@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-ll@right-central_column-300.0um
+        size: 10000
+        target: SSp-ll@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-ll@right-central_column-300.0um
+        size: 10000
+        target: SSp-ll@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-ll
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ECT@right-central_column-300.0um
+        pre: ECT@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ECT@right-central_column-300.0um
+        size: 10000
+        target: ECT@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ECT@right-central_column-300.0um
+        size: 10000
+        target: ECT@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ECT
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AIp@right-central_column-300.0um
+        pre: AIp@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AIp@right-central_column-300.0um
+        size: 10000
+        target: AIp@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AIp@right-central_column-300.0um
+        size: 10000
+        target: AIp@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AIp
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISC@right-central_column-300.0um
+        pre: VISC@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISC@right-central_column-300.0um
+        size: 10000
+        target: VISC@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISC@right-central_column-300.0um
+        size: 10000
+        target: VISC@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISC
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISpm@right-central_column-300.0um
+        pre: VISpm@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISpm@right-central_column-300.0um
+        size: 10000
+        target: VISpm@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISpm@right-central_column-300.0um
+        size: 10000
+        target: VISpm@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISpm
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ILA@right-central_column-300.0um
+        pre: ILA@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ILA@right-central_column-300.0um
+        size: 10000
+        target: ILA@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ILA@right-central_column-300.0um
+        size: 10000
+        target: ILA@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ILA
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: MOp@right-central_column-300.0um
+        pre: MOp@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/MOp@right-central_column-300.0um
+        size: 10000
+        target: MOp@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/MOp@right-central_column-300.0um
+        size: 10000
+        target: MOp@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: MOp
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISa@right-central_column-300.0um
+        pre: VISa@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISa@right-central_column-300.0um
+        size: 10000
+        target: VISa@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISa@right-central_column-300.0um
+        size: 10000
+        target: VISa@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISa
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISpor@right-central_column-300.0um
+        pre: VISpor@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISpor@right-central_column-300.0um
+        size: 10000
+        target: VISpor@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISpor@right-central_column-300.0um
+        size: 10000
+        target: VISpor@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISpor
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: FRP@right-central_column-300.0um
+        pre: FRP@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/FRP@right-central_column-300.0um
+        size: 10000
+        target: FRP@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/FRP@right-central_column-300.0um
+        size: 10000
+        target: FRP@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: FRP
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AIv@right-central_column-300.0um
+        pre: AIv@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AIv@right-central_column-300.0um
+        size: 10000
+        target: AIv@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AIv@right-central_column-300.0um
+        size: 10000
+        target: AIv@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AIv
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-tr@right-central_column-300.0um
+        pre: SSp-tr@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-tr@right-central_column-300.0um
+        size: 10000
+        target: SSp-tr@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-tr@right-central_column-300.0um
+        size: 10000
+        target: SSp-tr@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-tr
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ORBm@right-central_column-300.0um
+        pre: ORBm@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ORBm@right-central_column-300.0um
+        size: 10000
+        target: ORBm@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ORBm@right-central_column-300.0um
+        size: 10000
+        target: ORBm@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ORBm
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-n@right-central_column-300.0um
+        pre: SSp-n@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-n@right-central_column-300.0um
+        size: 10000
+        target: SSp-n@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-n@right-central_column-300.0um
+        size: 10000
+        target: SSp-n@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-n
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISp@right-central_column-300.0um
+        pre: VISp@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISp@right-central_column-300.0um
+        size: 10000
+        target: VISp@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISp@right-central_column-300.0um
+        size: 10000
+        target: VISp@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISp
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AUDpo@right-central_column-300.0um
+        pre: AUDpo@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDpo@right-central_column-300.0um
+        size: 10000
+        target: AUDpo@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDpo@right-central_column-300.0um
+        size: 10000
+        target: AUDpo@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AUDpo
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: PERI@right-central_column-300.0um
+        pre: PERI@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/PERI@right-central_column-300.0um
+        size: 10000
+        target: PERI@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/PERI@right-central_column-300.0um
+        size: 10000
+        target: PERI@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: PERI
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: GU@right-central_column-300.0um
+        pre: GU@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/GU@right-central_column-300.0um
+        size: 10000
+        target: GU@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/GU@right-central_column-300.0um
+        size: 10000
+        target: GU@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: GU
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-ul@right-central_column-300.0um
+        pre: SSp-ul@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-ul@right-central_column-300.0um
+        size: 10000
+        target: SSp-ul@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-ul@right-central_column-300.0um
+        size: 10000
+        target: SSp-ul@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-ul
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ACAd@right-central_column-300.0um
+        pre: ACAd@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ACAd@right-central_column-300.0um
+        size: 10000
+        target: ACAd@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ACAd@right-central_column-300.0um
+        size: 10000
+        target: ACAd@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ACAd
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISli@right-central_column-300.0um
+        pre: VISli@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISli@right-central_column-300.0um
+        size: 10000
+        target: VISli@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISli@right-central_column-300.0um
+        size: 10000
+        target: VISli@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISli
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ORBl@right-central_column-300.0um
+        pre: ORBl@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ORBl@right-central_column-300.0um
+        size: 10000
+        target: ORBl@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ORBl@right-central_column-300.0um
+        size: 10000
+        target: ORBl@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ORBl
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: RSPv@right-central_column-300.0um
+        pre: RSPv@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/RSPv@right-central_column-300.0um
+        size: 10000
+        target: RSPv@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/RSPv@right-central_column-300.0um
+        size: 10000
+        target: RSPv@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: RSPv
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-un@right-central_column-300.0um
+        pre: SSp-un@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-un@right-central_column-300.0um
+        size: 10000
+        target: SSp-un@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-un@right-central_column-300.0um
+        size: 10000
+        target: SSp-un@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-un
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISrl@right-central_column-300.0um
+        pre: VISrl@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISrl@right-central_column-300.0um
+        size: 10000
+        target: VISrl@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISrl@right-central_column-300.0um
+        size: 10000
+        target: VISrl@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISrl
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSs@right-central_column-300.0um
+        pre: SSs@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSs@right-central_column-300.0um
+        size: 10000
+        target: SSs@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSs@right-central_column-300.0um
+        size: 10000
+        target: SSs@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSs
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISpl@right-central_column-300.0um
+        pre: VISpl@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISpl@right-central_column-300.0um
+        size: 10000
+        target: VISpl@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISpl@right-central_column-300.0um
+        size: 10000
+        target: VISpl@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISpl
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AUDp@right-central_column-300.0um
+        pre: AUDp@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDp@right-central_column-300.0um
+        size: 10000
+        target: AUDp@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDp@right-central_column-300.0um
+        size: 10000
+        target: AUDp@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AUDp
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: TEa@right-central_column-300.0um
+        pre: TEa@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/TEa@right-central_column-300.0um
+        size: 10000
+        target: TEa@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/TEa@right-central_column-300.0um
+        size: 10000
+        target: TEa@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: TEa
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISal@right-central_column-300.0um
+        pre: VISal@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISal@right-central_column-300.0um
+        size: 10000
+        target: VISal@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISal@right-central_column-300.0um
+        size: 10000
+        target: VISal@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISal
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: ACAv@right-central_column-300.0um
+        pre: ACAv@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ACAv@right-central_column-300.0um
+        size: 10000
+        target: ACAv@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/ACAv@right-central_column-300.0um
+        size: 10000
+        target: ACAv@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: ACAv
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: RSPagl@right-central_column-300.0um
+        pre: RSPagl@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/RSPagl@right-central_column-300.0um
+        size: 10000
+        target: RSPagl@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/RSPagl@right-central_column-300.0um
+        size: 10000
+        target: RSPagl@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: RSPagl
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISl@right-central_column-300.0um
+        pre: VISl@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISl@right-central_column-300.0um
+        size: 10000
+        target: VISl@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISl@right-central_column-300.0um
+        size: 10000
+        target: VISl@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISl
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: VISam@right-central_column-300.0um
+        pre: VISam@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISam@right-central_column-300.0um
+        size: 10000
+        target: VISam@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/VISam@right-central_column-300.0um
+        size: 10000
+        target: VISam@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: VISam
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AUDd@right-central_column-300.0um
+        pre: AUDd@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDd@right-central_column-300.0um
+        size: 10000
+        target: AUDd@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDd@right-central_column-300.0um
+        size: 10000
+        target: AUDd@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AUDd
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AId@right-central_column-300.0um
+        pre: AId@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AId@right-central_column-300.0um
+        size: 10000
+        target: AId@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AId@right-central_column-300.0um
+        size: 10000
+        target: AId@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AId
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: AUDv@right-central_column-300.0um
+        pre: AUDv@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDv@right-central_column-300.0um
+        size: 10000
+        target: AUDv@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/AUDv@right-central_column-300.0um
+        size: 10000
+        target: AUDv@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: AUDv
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: RSPd@right-central_column-300.0um
+        pre: RSPd@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/RSPd@right-central_column-300.0um
+        size: 10000
+        target: RSPd@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/RSPd@right-central_column-300.0um
+        size: 10000
+        target: RSPd@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: RSPd
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: SSp-m@right-central_column-300.0um
+        pre: SSp-m@right-central_column-300.0um
+        size: 1000
+  - experimental_syns_con:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-m@right-central_column-300.0um
+        size: 10000
+        target: SSp-m@right-central_column-300.0um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_columns/SSp-m@right-central_column-300.0um
+        size: 10000
+        target: SSp-m@right-central_column-300.0um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: SSp-m
+- strategies:
+  - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
       formula_ee: 1.5 * n
       max_value: 25.0
@@ -6,364 +1436,29 @@
         post: MOs@right-central_column-300.0um
         pre: MOs@right-central_column-300.0um
         size: 1000
-  - experimental_syns_con: &id002
+  - experimental_syns_con:
       bio_data: /gpfs/bbp.cscs.ch/project/proj64/entities/dev/datasets/nsyn_per_connection_20160509_full.tsv
-  - estimate_bouton_reduction: &id003
+  - estimate_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
         mask: central_columns/MOs@right-central_column-300.0um
         size: 10000
         target: MOs@right-central_column-300.0um
-  - estimate_individual_bouton_reduction: &id004
+  - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
         mask: central_columns/MOs@right-central_column-300.0um
         size: 10000
         target: MOs@right-central_column-300.0um
-  - generalized_cv: &id005
+  - generalized_cv:
       cv: 0.32
-  - override_mtype: &id006
+  - override_mtype:
       bouton_reduction_factor: 1.0
       mtype_pattern: CHC
       pMu_A: 0.0
       p_A: 1.0
-  - - add_constraints:
-        from_region: PL
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ORBvl
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-bfd
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-ll
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ECT
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AIp
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISC
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISpm
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ILA
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: MOp
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISa
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISpor
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: FRP
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AIv
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-tr
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ORBm
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-n
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISp
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AUDpo
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: PERI
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: GU
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-ul
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ACAd
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISli
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ORBl
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: RSPv
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-un
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISrl
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSs
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISpl
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AUDp
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: TEa
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISal
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: ACAv
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: RSPagl
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISl
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: VISam
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AUDd
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AId
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: AUDv
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: RSPd
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: SSp-m
-- - estimate_syns_con: *id001
-  - experimental_syns_con: *id002
-  - estimate_bouton_reduction: *id003
-  - estimate_individual_bouton_reduction: *id004
-  - generalized_cv: *id005
-  - override_mtype: *id006
-  - - add_constraints:
-        from_region: MOs
+  - add_constraints:
+      from_region: MOs
+version: 1
