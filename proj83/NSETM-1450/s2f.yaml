@@ -1,0 +1,66 @@
+regions:
+- strategies:
+  - estimate_syns_con:
+      formula: 6 * ((n - 1) ** 0.5) - 1
+      formula_ee: 1.5 * n
+      max_value: 25.0
+      sample:
+        post: central_column_4_region_700um
+        pre: central_column_4_region_700um
+        size: 1000
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_column_4_region_700um
+        size: 10000
+        target: central_column_4_region_700um
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: central_column_4_region_700um
+        size: 10000
+        target: central_column_4_region_700um
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: Mosaic
+- strategies:
+  - estimate_syns_con:
+      formula: 1.0 * n
+      formula_ee: 1.0 * n
+      max_value: 25.0
+      sample:
+        post: S1HL_Column
+        pre: S1HL_Column
+        size: 1000
+  - estimate_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj83/home/reimann/NSETM-1450/bouton_reduction_evalutation_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: S1HL_Column
+        size: 10000
+        target: S1HL_Column
+  - estimate_individual_bouton_reduction:
+      bio_data: /gpfs/bbp.cscs.ch/project/proj83/home/reimann/NSETM-1450/bouton_reduction_evalutation_data.tsv
+      sample:
+        assume_syns_bouton: 1.0
+        mask: S1HL_Column
+        size: 10000
+        target: S1HL_Column
+  - generalized_cv:
+      cv: 0.32
+  - override_mtype:
+      bouton_reduction_factor: 1.0
+      mtype_pattern: CHC
+      pMu_A: 0.0
+      p_A: 1.0
+  - add_constraints:
+      from_region: S1HL
+version: 1
