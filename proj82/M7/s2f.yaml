@@ -14,14 +14,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/PL@right-central_column-300.0um
+        mask: central-columns/PL@right-central_column-300.0um
         size: 10000
         target: PL@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/PL@right-central_column-300.0um
+        mask: central-columns/PL@right-central_column-300.0um
         size: 10000
         target: PL@right-central_column-300.0um
   - generalized_cv:
@@ -32,7 +32,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: PL
+      fromRegion: PL
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -48,14 +48,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ORBvl@right-central_column-300.0um
+        mask: central-columns/ORBvl@right-central_column-300.0um
         size: 10000
         target: ORBvl@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ORBvl@right-central_column-300.0um
+        mask: central-columns/ORBvl@right-central_column-300.0um
         size: 10000
         target: ORBvl@right-central_column-300.0um
   - generalized_cv:
@@ -66,7 +66,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ORBvl
+      fromRegion: ORBvl
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -82,14 +82,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-bfd@right-central_column-300.0um
+        mask: central-columns/SSp-bfd@right-central_column-300.0um
         size: 10000
         target: SSp-bfd@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-bfd@right-central_column-300.0um
+        mask: central-columns/SSp-bfd@right-central_column-300.0um
         size: 10000
         target: SSp-bfd@right-central_column-300.0um
   - generalized_cv:
@@ -100,7 +100,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-bfd
+      fromRegion: SSp-bfd
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -116,14 +116,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-ll@right-central_column-300.0um
+        mask: central-columns/SSp-ll@right-central_column-300.0um
         size: 10000
         target: SSp-ll@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-ll@right-central_column-300.0um
+        mask: central-columns/SSp-ll@right-central_column-300.0um
         size: 10000
         target: SSp-ll@right-central_column-300.0um
   - generalized_cv:
@@ -134,7 +134,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-ll
+      fromRegion: SSp-ll
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -150,14 +150,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ECT@right-central_column-300.0um
+        mask: central-columns/ECT@right-central_column-300.0um
         size: 10000
         target: ECT@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ECT@right-central_column-300.0um
+        mask: central-columns/ECT@right-central_column-300.0um
         size: 10000
         target: ECT@right-central_column-300.0um
   - generalized_cv:
@@ -168,7 +168,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ECT
+      fromRegion: ECT
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -184,14 +184,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AIp@right-central_column-300.0um
+        mask: central-columns/AIp@right-central_column-300.0um
         size: 10000
         target: AIp@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AIp@right-central_column-300.0um
+        mask: central-columns/AIp@right-central_column-300.0um
         size: 10000
         target: AIp@right-central_column-300.0um
   - generalized_cv:
@@ -202,7 +202,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AIp
+      fromRegion: AIp
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -218,14 +218,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISC@right-central_column-300.0um
+        mask: central-columns/VISC@right-central_column-300.0um
         size: 10000
         target: VISC@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISC@right-central_column-300.0um
+        mask: central-columns/VISC@right-central_column-300.0um
         size: 10000
         target: VISC@right-central_column-300.0um
   - generalized_cv:
@@ -236,7 +236,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISC
+      fromRegion: VISC
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -252,14 +252,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISpm@right-central_column-300.0um
+        mask: central-columns/VISpm@right-central_column-300.0um
         size: 10000
         target: VISpm@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISpm@right-central_column-300.0um
+        mask: central-columns/VISpm@right-central_column-300.0um
         size: 10000
         target: VISpm@right-central_column-300.0um
   - generalized_cv:
@@ -270,7 +270,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISpm
+      fromRegion: VISpm
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -286,14 +286,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ILA@right-central_column-300.0um
+        mask: central-columns/ILA@right-central_column-300.0um
         size: 10000
         target: ILA@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ILA@right-central_column-300.0um
+        mask: central-columns/ILA@right-central_column-300.0um
         size: 10000
         target: ILA@right-central_column-300.0um
   - generalized_cv:
@@ -304,7 +304,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ILA
+      fromRegion: ILA
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -320,14 +320,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/MOp@right-central_column-300.0um
+        mask: central-columns/MOp@right-central_column-300.0um
         size: 10000
         target: MOp@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/MOp@right-central_column-300.0um
+        mask: central-columns/MOp@right-central_column-300.0um
         size: 10000
         target: MOp@right-central_column-300.0um
   - generalized_cv:
@@ -338,7 +338,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: MOp
+      fromRegion: MOp
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -354,14 +354,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISa@right-central_column-300.0um
+        mask: central-columns/VISa@right-central_column-300.0um
         size: 10000
         target: VISa@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISa@right-central_column-300.0um
+        mask: central-columns/VISa@right-central_column-300.0um
         size: 10000
         target: VISa@right-central_column-300.0um
   - generalized_cv:
@@ -372,7 +372,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISa
+      fromRegion: VISa
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -388,14 +388,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISpor@right-central_column-300.0um
+        mask: central-columns/VISpor@right-central_column-300.0um
         size: 10000
         target: VISpor@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISpor@right-central_column-300.0um
+        mask: central-columns/VISpor@right-central_column-300.0um
         size: 10000
         target: VISpor@right-central_column-300.0um
   - generalized_cv:
@@ -406,7 +406,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISpor
+      fromRegion: VISpor
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -422,14 +422,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/FRP@right-central_column-300.0um
+        mask: central-columns/FRP@right-central_column-300.0um
         size: 10000
         target: FRP@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/FRP@right-central_column-300.0um
+        mask: central-columns/FRP@right-central_column-300.0um
         size: 10000
         target: FRP@right-central_column-300.0um
   - generalized_cv:
@@ -440,7 +440,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: FRP
+      fromRegion: FRP
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -456,14 +456,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AIv@right-central_column-300.0um
+        mask: central-columns/AIv@right-central_column-300.0um
         size: 10000
         target: AIv@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AIv@right-central_column-300.0um
+        mask: central-columns/AIv@right-central_column-300.0um
         size: 10000
         target: AIv@right-central_column-300.0um
   - generalized_cv:
@@ -474,7 +474,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AIv
+      fromRegion: AIv
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -490,14 +490,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-tr@right-central_column-300.0um
+        mask: central-columns/SSp-tr@right-central_column-300.0um
         size: 10000
         target: SSp-tr@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-tr@right-central_column-300.0um
+        mask: central-columns/SSp-tr@right-central_column-300.0um
         size: 10000
         target: SSp-tr@right-central_column-300.0um
   - generalized_cv:
@@ -508,7 +508,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-tr
+      fromRegion: SSp-tr
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -524,14 +524,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ORBm@right-central_column-300.0um
+        mask: central-columns/ORBm@right-central_column-300.0um
         size: 10000
         target: ORBm@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ORBm@right-central_column-300.0um
+        mask: central-columns/ORBm@right-central_column-300.0um
         size: 10000
         target: ORBm@right-central_column-300.0um
   - generalized_cv:
@@ -542,7 +542,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ORBm
+      fromRegion: ORBm
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -558,14 +558,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-n@right-central_column-300.0um
+        mask: central-columns/SSp-n@right-central_column-300.0um
         size: 10000
         target: SSp-n@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-n@right-central_column-300.0um
+        mask: central-columns/SSp-n@right-central_column-300.0um
         size: 10000
         target: SSp-n@right-central_column-300.0um
   - generalized_cv:
@@ -576,7 +576,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-n
+      fromRegion: SSp-n
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -592,14 +592,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISp@right-central_column-300.0um
+        mask: central-columns/VISp@right-central_column-300.0um
         size: 10000
         target: VISp@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISp@right-central_column-300.0um
+        mask: central-columns/VISp@right-central_column-300.0um
         size: 10000
         target: VISp@right-central_column-300.0um
   - generalized_cv:
@@ -610,7 +610,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISp
+      fromRegion: VISp
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -626,14 +626,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDpo@right-central_column-300.0um
+        mask: central-columns/AUDpo@right-central_column-300.0um
         size: 10000
         target: AUDpo@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDpo@right-central_column-300.0um
+        mask: central-columns/AUDpo@right-central_column-300.0um
         size: 10000
         target: AUDpo@right-central_column-300.0um
   - generalized_cv:
@@ -644,7 +644,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AUDpo
+      fromRegion: AUDpo
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -660,14 +660,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/PERI@right-central_column-300.0um
+        mask: central-columns/PERI@right-central_column-300.0um
         size: 10000
         target: PERI@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/PERI@right-central_column-300.0um
+        mask: central-columns/PERI@right-central_column-300.0um
         size: 10000
         target: PERI@right-central_column-300.0um
   - generalized_cv:
@@ -678,7 +678,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: PERI
+      fromRegion: PERI
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -694,14 +694,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/GU@right-central_column-300.0um
+        mask: central-columns/GU@right-central_column-300.0um
         size: 10000
         target: GU@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/GU@right-central_column-300.0um
+        mask: central-columns/GU@right-central_column-300.0um
         size: 10000
         target: GU@right-central_column-300.0um
   - generalized_cv:
@@ -712,7 +712,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: GU
+      fromRegion: GU
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -728,14 +728,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-ul@right-central_column-300.0um
+        mask: central-columns/SSp-ul@right-central_column-300.0um
         size: 10000
         target: SSp-ul@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-ul@right-central_column-300.0um
+        mask: central-columns/SSp-ul@right-central_column-300.0um
         size: 10000
         target: SSp-ul@right-central_column-300.0um
   - generalized_cv:
@@ -746,7 +746,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-ul
+      fromRegion: SSp-ul
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -762,14 +762,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ACAd@right-central_column-300.0um
+        mask: central-columns/ACAd@right-central_column-300.0um
         size: 10000
         target: ACAd@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ACAd@right-central_column-300.0um
+        mask: central-columns/ACAd@right-central_column-300.0um
         size: 10000
         target: ACAd@right-central_column-300.0um
   - generalized_cv:
@@ -780,7 +780,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ACAd
+      fromRegion: ACAd
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -796,14 +796,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISli@right-central_column-300.0um
+        mask: central-columns/VISli@right-central_column-300.0um
         size: 10000
         target: VISli@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISli@right-central_column-300.0um
+        mask: central-columns/VISli@right-central_column-300.0um
         size: 10000
         target: VISli@right-central_column-300.0um
   - generalized_cv:
@@ -814,7 +814,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISli
+      fromRegion: VISli
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -830,14 +830,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ORBl@right-central_column-300.0um
+        mask: central-columns/ORBl@right-central_column-300.0um
         size: 10000
         target: ORBl@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ORBl@right-central_column-300.0um
+        mask: central-columns/ORBl@right-central_column-300.0um
         size: 10000
         target: ORBl@right-central_column-300.0um
   - generalized_cv:
@@ -848,7 +848,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ORBl
+      fromRegion: ORBl
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -864,14 +864,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/RSPv@right-central_column-300.0um
+        mask: central-columns/RSPv@right-central_column-300.0um
         size: 10000
         target: RSPv@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/RSPv@right-central_column-300.0um
+        mask: central-columns/RSPv@right-central_column-300.0um
         size: 10000
         target: RSPv@right-central_column-300.0um
   - generalized_cv:
@@ -882,7 +882,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: RSPv
+      fromRegion: RSPv
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -898,14 +898,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-un@right-central_column-300.0um
+        mask: central-columns/SSp-un@right-central_column-300.0um
         size: 10000
         target: SSp-un@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-un@right-central_column-300.0um
+        mask: central-columns/SSp-un@right-central_column-300.0um
         size: 10000
         target: SSp-un@right-central_column-300.0um
   - generalized_cv:
@@ -916,7 +916,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-un
+      fromRegion: SSp-un
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -932,14 +932,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISrl@right-central_column-300.0um
+        mask: central-columns/VISrl@right-central_column-300.0um
         size: 10000
         target: VISrl@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISrl@right-central_column-300.0um
+        mask: central-columns/VISrl@right-central_column-300.0um
         size: 10000
         target: VISrl@right-central_column-300.0um
   - generalized_cv:
@@ -950,7 +950,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISrl
+      fromRegion: VISrl
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -966,14 +966,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSs@right-central_column-300.0um
+        mask: central-columns/SSs@right-central_column-300.0um
         size: 10000
         target: SSs@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSs@right-central_column-300.0um
+        mask: central-columns/SSs@right-central_column-300.0um
         size: 10000
         target: SSs@right-central_column-300.0um
   - generalized_cv:
@@ -984,7 +984,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSs
+      fromRegion: SSs
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1000,14 +1000,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISpl@right-central_column-300.0um
+        mask: central-columns/VISpl@right-central_column-300.0um
         size: 10000
         target: VISpl@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISpl@right-central_column-300.0um
+        mask: central-columns/VISpl@right-central_column-300.0um
         size: 10000
         target: VISpl@right-central_column-300.0um
   - generalized_cv:
@@ -1018,7 +1018,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISpl
+      fromRegion: VISpl
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1034,14 +1034,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDp@right-central_column-300.0um
+        mask: central-columns/AUDp@right-central_column-300.0um
         size: 10000
         target: AUDp@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDp@right-central_column-300.0um
+        mask: central-columns/AUDp@right-central_column-300.0um
         size: 10000
         target: AUDp@right-central_column-300.0um
   - generalized_cv:
@@ -1052,7 +1052,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AUDp
+      fromRegion: AUDp
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1068,14 +1068,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/TEa@right-central_column-300.0um
+        mask: central-columns/TEa@right-central_column-300.0um
         size: 10000
         target: TEa@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/TEa@right-central_column-300.0um
+        mask: central-columns/TEa@right-central_column-300.0um
         size: 10000
         target: TEa@right-central_column-300.0um
   - generalized_cv:
@@ -1086,7 +1086,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: TEa
+      fromRegion: TEa
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1102,14 +1102,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISal@right-central_column-300.0um
+        mask: central-columns/VISal@right-central_column-300.0um
         size: 10000
         target: VISal@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISal@right-central_column-300.0um
+        mask: central-columns/VISal@right-central_column-300.0um
         size: 10000
         target: VISal@right-central_column-300.0um
   - generalized_cv:
@@ -1120,7 +1120,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISal
+      fromRegion: VISal
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1136,14 +1136,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ACAv@right-central_column-300.0um
+        mask: central-columns/ACAv@right-central_column-300.0um
         size: 10000
         target: ACAv@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/ACAv@right-central_column-300.0um
+        mask: central-columns/ACAv@right-central_column-300.0um
         size: 10000
         target: ACAv@right-central_column-300.0um
   - generalized_cv:
@@ -1154,7 +1154,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: ACAv
+      fromRegion: ACAv
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1170,14 +1170,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/RSPagl@right-central_column-300.0um
+        mask: central-columns/RSPagl@right-central_column-300.0um
         size: 10000
         target: RSPagl@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/RSPagl@right-central_column-300.0um
+        mask: central-columns/RSPagl@right-central_column-300.0um
         size: 10000
         target: RSPagl@right-central_column-300.0um
   - generalized_cv:
@@ -1188,7 +1188,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: RSPagl
+      fromRegion: RSPagl
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1204,14 +1204,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISl@right-central_column-300.0um
+        mask: central-columns/VISl@right-central_column-300.0um
         size: 10000
         target: VISl@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISl@right-central_column-300.0um
+        mask: central-columns/VISl@right-central_column-300.0um
         size: 10000
         target: VISl@right-central_column-300.0um
   - generalized_cv:
@@ -1222,7 +1222,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISl
+      fromRegion: VISl
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1238,14 +1238,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISam@right-central_column-300.0um
+        mask: central-columns/VISam@right-central_column-300.0um
         size: 10000
         target: VISam@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/VISam@right-central_column-300.0um
+        mask: central-columns/VISam@right-central_column-300.0um
         size: 10000
         target: VISam@right-central_column-300.0um
   - generalized_cv:
@@ -1256,7 +1256,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: VISam
+      fromRegion: VISam
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1272,14 +1272,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDd@right-central_column-300.0um
+        mask: central-columns/AUDd@right-central_column-300.0um
         size: 10000
         target: AUDd@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDd@right-central_column-300.0um
+        mask: central-columns/AUDd@right-central_column-300.0um
         size: 10000
         target: AUDd@right-central_column-300.0um
   - generalized_cv:
@@ -1290,7 +1290,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AUDd
+      fromRegion: AUDd
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1306,14 +1306,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AId@right-central_column-300.0um
+        mask: central-columns/AId@right-central_column-300.0um
         size: 10000
         target: AId@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AId@right-central_column-300.0um
+        mask: central-columns/AId@right-central_column-300.0um
         size: 10000
         target: AId@right-central_column-300.0um
   - generalized_cv:
@@ -1324,7 +1324,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AId
+      fromRegion: AId
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1340,14 +1340,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDv@right-central_column-300.0um
+        mask: central-columns/AUDv@right-central_column-300.0um
         size: 10000
         target: AUDv@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/AUDv@right-central_column-300.0um
+        mask: central-columns/AUDv@right-central_column-300.0um
         size: 10000
         target: AUDv@right-central_column-300.0um
   - generalized_cv:
@@ -1358,7 +1358,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: AUDv
+      fromRegion: AUDv
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1374,14 +1374,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/RSPd@right-central_column-300.0um
+        mask: central-columns/RSPd@right-central_column-300.0um
         size: 10000
         target: RSPd@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/RSPd@right-central_column-300.0um
+        mask: central-columns/RSPd@right-central_column-300.0um
         size: 10000
         target: RSPd@right-central_column-300.0um
   - generalized_cv:
@@ -1392,7 +1392,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: RSPd
+      fromRegion: RSPd
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1408,14 +1408,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-m@right-central_column-300.0um
+        mask: central-columns/SSp-m@right-central_column-300.0um
         size: 10000
         target: SSp-m@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/SSp-m@right-central_column-300.0um
+        mask: central-columns/SSp-m@right-central_column-300.0um
         size: 10000
         target: SSp-m@right-central_column-300.0um
   - generalized_cv:
@@ -1426,7 +1426,7 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: SSp-m
+      fromRegion: SSp-m
 - strategies:
   - estimate_syns_con:
       formula: 6 * ((n - 1) ** 0.5) - 1
@@ -1442,14 +1442,14 @@ regions:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/MOs@right-central_column-300.0um
+        mask: central-columns/MOs@right-central_column-300.0um
         size: 10000
         target: MOs@right-central_column-300.0um
   - estimate_individual_bouton_reduction:
       bio_data: /gpfs/bbp.cscs.ch/project/proj68/entities/bionames/bouton_reduction_bio_data.tsv
       sample:
         assume_syns_bouton: 1.0
-        mask: central_columns/MOs@right-central_column-300.0um
+        mask: central-columns/MOs@right-central_column-300.0um
         size: 10000
         target: MOs@right-central_column-300.0um
   - generalized_cv:
@@ -1460,5 +1460,5 @@ regions:
       pMu_A: 0.0
       p_A: 1.0
   - add_constraints:
-      from_region: MOs
+      fromRegion: MOs
 version: 1
